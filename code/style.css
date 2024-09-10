@@ -1,10 +1,52 @@
 /* After you've linked the CSS file in the HTML,
 this should turn the background blue ;) */
 body {
-  background: turquoise;
+  background: linear-gradient(to right, beige, #e69739);
+}
+
+.head-container {
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 15px;
+}
+
+.head-container > div {
+  align-self: baseline;
+}
+
+header {
+  font-size: xx-large;
+}
+
+.responsive {
+  width: 45%;
+  height: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-grow: 2;
+}
+
+video {
+  align-self: center;
+  display:inline-block;
 }
 
 h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  text-align: center;
 }
 
+.button-container {
+  text-align: center;
+  font-style: oblique;
+  font-size: 30px;
+}
+
+#button:hover {
+  color: blue;
+}

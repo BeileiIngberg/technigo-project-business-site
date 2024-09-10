@@ -8,16 +8,47 @@
   </head>
 
   <body>
-    <header>Why Wait? Pet a Bear Now!</header>
+    
+  <div class="head-container">
+    <div class="head-child"><header class="smile-text">Why Wait? Pet a Bear Now!</header>
+    </div>
+    <div class="head-child"><img src="assets/baby-bear.png" alt="baby-bear" class="responsive">
+    </div>
+  </div>
 
     <h1> Our Bears 🌻</h1>
 
-    <!-- Video or image as a header is cool :) -->
+  <video width="100%" controls src="/code/assets/mixkit-pair-of-brown-bears-in-the-field-4071-hd-ready.mp4" type="video/mp4">
+  </video>
 
     <!-- Signup form -->
-    <div class="button container">
+    <div class="button-container">
+      <input type="text" id="username" placeholder="Enter your username">
+      <label>Username</label><br>
+      <input type="text" id="password" placeholder="Enter your password">
+      <label>Password</label><br>
+      <button type="submit">Login</button><br>
+
+      <p1>Do you want a private tour to see our cute bears?</p1><br>
+      <div><input type="radio" name="privateTour" checked>
+      <label for="yes">yes</label><br>
+      </div>
+      <div><input type="radio" name="privateTour">
+      <label for="no">no</label><br>
+      </div>
       <button onClick="alert('Hej')" id="button" class="btn">
-        Click
+        Submit
+      </button><br>
+
+      <p1>Which bears do you want to pet?</p1><br>
+      <input type="checkbox">
+      <label for="type1">Polar bears</label><br>
+      <input type="checkbox">
+      <label for="type2">Pandas</label><br>
+      <input type="checkbox">
+      <label for="type3">Grizzlies</label><br>
+      <button onClick="alert('Hej')" id="button" class="btn">
+        Submit
       </button>
     </div>
 
