@@ -1,5 +1,10 @@
 /* After you've linked the CSS file in the HTML,
 this should turn the background blue ;) */
 body {
-  background: blue;
+  background: turquoise;
 }
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
