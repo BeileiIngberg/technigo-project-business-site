@@ -1,52 +1,127 @@
 /* After you've linked the CSS file in the HTML,
 this should turn the background blue ;) */
 body {
-  background: linear-gradient(to right, beige, #e69739);
+  background: #FEFEFF;
+  font-family: Playpen Sans;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
 }
 
 .head-container {
-  box-sizing: border-box;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  gap: 15px;
-}
-
-.head-container > div {
-  align-self: baseline;
-}
-
-header {
-  font-size: xx-large;
-}
-
-.responsive {
-  width: 45%;
-  height: 30%;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-grow: 2;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 video {
-  align-self: center;
-  display:inline-block;
+  width: 100%;
 }
 
-h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: x-large;
-  text-align: center;
+.banner {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  height: 30%;
+  width: 25%;
+  border: 2px #FED99B solid;
+  font-size: 1,37em;
+  margin: 50px;
+  height: fit-content;
+  align-content: center;
+  display: flex;
+  backdrop-filter: brightness(70%);
+  border-radius: 30px;
+}
+
+.head-text > h1 {
+  font-size: 140%;
+  flex-wrap: wrap;
+  border-bottom: #FED99B solid;
+  padding: 10px;
+}
+
+.head-tex > p {
+  font-size: 1,1em;
+}
+
+button {
+  font-size: 130%;
+  background-color: #FED99B;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.photo-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  margin: 35px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #FED99B;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #D6EFFF;
+  box-sizing: content-box;
+  border: #FED99B solid; 
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  line-height: 3rem;
+  font-size: large;
 }
 
 .button-container {
-  text-align: center;
-  font-style: oblique;
-  font-size: 30px;
+  gap: 50px;
 }
 
 #button:hover {
   color: blue;
 }
+
+@media screen and (max-width: 776px) {
+  body {
+    font-size: 7px;
+  }
+
+  .head-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner {
+    position: absolute;
+    top: 10px;
+    display: flex;
+  }
+
+  .photo-grid {
+    display: block;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+}
+   

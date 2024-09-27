@@ -4,31 +4,63 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet a bear</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">    
   </head>
 
   <body>
     
   <div class="head-container">
-    <div class="head-child"><header class="smile-text">Why Wait? Pet a Bear Now!</header>
-    </div>
-    <div class="head-child"><img src="assets/baby-bear.png" alt="baby-bear" class="responsive">
+    <video autoplay muted loop>
+      <source src="assets/854303-hd_1920_1080_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="banner">
+      <div class="head-text">
+        <h1>Why Wait? Pet a Bear Now!</h1>
+        <p>Don't hesitate to interact with our exclusive bears in the only bear reservoir in Scandinavia.<br>🐻 🐻 🐻‍❄️ 🐻‍❄️</p>
+        <div class="head-button">
+          <button>Book now!</button>
+        </div>
+      </div>
     </div>
   </div>
 
-    <h1> Our Bears 🌻</h1>
+  <h1> Our Bears 🌻</h1>
 
-  <video width="100%" controls src="/code/assets/mixkit-pair-of-brown-bears-in-the-field-4071-hd-ready.mp4" type="video/mp4">
-  </video>
+  <div class="photo-grid">
+    <div class="card a">
+      <img src="./assets/dustin-bowdige-yoSD_s7j5P4-unsplash.jpg" />
+    </div>
+    <div class="card b">
+      <img src="./assets/hans-veth-hgUYoaukCdY-unsplash.jpg" />
+    </div>
+    <div class="card c">
+      <img src="./assets/hans-veth-T5bcvBRHv_E-unsplash.jpg" />
+    </div>
+    <div class="card d">
+      <img src="./assets/lauren-lopes-ZaopYPw__F8-unsplash.jpg" />
+    </div>
+    <div class="card d">
+      <img src="./assets/peg-lemkuil-omlIj7iDYLQ-unsplash.jpg" />
+    </div>
+    <div class="card e">
+      <img src="./assets/sporisevic-photography-wc4zylNswiM-unsplash.jpg" />
+    </div>
+  </div>
 
     <!-- Signup form -->
+  <div class="section">
     <div class="button-container">
       <input type="text" id="username" placeholder="Enter your username">
-      <label>Username</label><br>
+      <label>Username</label>
       <input type="text" id="password" placeholder="Enter your password">
       <label>Password</label><br>
-      <button type="submit">Login</button><br>
+      <button type="submit">Login</button><button type="signup">Sign up</button>
+    </div>
 
+    <div class="button-container">
       <p1>Do you want a private tour to see our cute bears?</p1><br>
       <div><input type="radio" name="privateTour" checked>
       <label for="yes">yes</label><br>
@@ -39,7 +71,9 @@
       <button onClick="alert('Hej')" id="button" class="btn">
         Submit
       </button><br>
+    </div>
 
+    <div class="button-container">
       <p1>Which bears do you want to pet?</p1><br>
       <input type="checkbox">
       <label for="type1">Polar bears</label><br>
@@ -51,6 +85,7 @@
         Submit
       </button>
     </div>
+  </div>
 
   </body>
 </html>
